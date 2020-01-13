@@ -4,7 +4,7 @@
 // a 5) per il computer.
 // Sommiamo i due numeri e dichiariamo chi ha
 // vinto (controlliamo se la somma da pari o dispari).
-var evenOdd = prompt('Scegli Pari o Dispari');
+var evenOdd = prompt('Scegli pari o dispari');
 console.log(evenOdd);
 
 do {
@@ -18,8 +18,17 @@ console.log(random);
 var somma = 0;
 somma = numero + random;
 console.log(somma);
-if(somma % 2 == 0 && evenOdd == pari){
+
+if(checkOddEven(somma) == evenOdd){
   alert("L'utente ha vinto");
 }else {
   alert("L'utente ha perso");
+}
+
+function checkOddEven(num){
+  if(num % 2 == 0){
+    return 'pari';
+  }else{
+    return 'dispari';
+  }
 }
