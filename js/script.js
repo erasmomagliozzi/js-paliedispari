@@ -8,7 +8,7 @@ while(i < n){
  var parola = prompt('Inserisci una parola');
  console.log(parola);
 
- if((parola[0] && parola[1] && parola[2] == parola[3] && parola[4] && parola[5]) || (parola[0] && parola[1] == parola[2] && parola[3]) || (parola[0] && parola[1] == parola[3] && parola[4])){
+ if((parola[0] && parola[1] && parola[2] == parola[3] && parola[4] && parola[5]) || (parola[0] && parola[1] == parola[2] && parola[3]) || (parola[0] && parola[1] == parola[3] && parola[4]) || (parola[0] == parola[2])){
    var palindroma = true;
    console.log('Questa parola è palindroma');
  }else{
